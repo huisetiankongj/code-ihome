@@ -1,0 +1,22 @@
+<#assign className = table.className>   
+<#assign classNameFirstLower = className?uncap_first>   
+<#assign classNameLowerCase = className?lower_case>
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+	<!-- DAO -->
+	<bean id="tech.${classNameFirstLower}Dao" class="${basepackage}.${modelName}.dao.jdbc.${className}DaoImpl" parent="tech.paginalDao" />
+
+	<!-- SERVICE -->
+	<bean id="tech.${classNameFirstLower}Service" class="${basepackage}.${modelName}.service.${className}ServiceImpl" p:${classNameFirstLower}Dao-ref="tech.${classNameFirstLower}Dao"/>	
+			
+</beans>

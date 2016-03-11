@@ -1,0 +1,32 @@
+1，模板里面是Springmvc 轻量级框架 ，生产的java代码可直接使用。
+2，自己先新建一个web动态项目，把java_src 下面的代码拷贝到项目src下面，。
+3，把web下面的内容拷贝到项目WebContent下面覆盖，
+4，SpringMvc_lib 是框架的支持库，请自行拷贝到 项目WebContent/Web-INF/lib ,稍作修改项目即可运行，
+5，视图 页面是没有的，可以根据自己喜好，选择喜好的视图，
+
+模板还可以根据自己需求修改，
+
+ 这个框架代码量非常少，很适合快速开发，
+ 最爽的是自动生成代码啦
+ 用什么问题可以直接询问
+ qq ：402315329
+ email lvzongjin@gmail.com
+
+ 生成器来自：
+ http://code.google.com/p/rapid-framework/wiki/rapid_generator_gg
+
+ 感谢 bad...@gmail.com 的开源框架
+
+ 希望更多的人使用，
+ ssh 太过繁琐了，
+
+ 在这里还推荐 
+ JFinal 这个个框架是JAVA 极速WEB+ORM
+
+ JFinal 是基于 Java 语言的极速 WEB + ORM 框架，其核心设计目标是开发迅速
+ 、代码量少、学习简单、功能强大、轻量级、易扩展、Restful。
+ 在拥有Java语言所有优势的同时再拥有ruby、python、php等动态语言的开发效率！
+ 为您节约更多时间，去陪恋人、家人和朋友 
+ http://code.google.com/p/jfinal/
+
+
